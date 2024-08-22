@@ -34,6 +34,10 @@ header {
   z-index: 100;
 }
 
+header nav {
+  display: contents;
+}
+
 header > * {
   flex: 1;
 }
