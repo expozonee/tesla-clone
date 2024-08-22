@@ -17,8 +17,7 @@ img {
 
 img[logo] {
   width: 100px;
-  padding-left: 2rem;
-  width: 152px;
+  width: 120px;
 }
 
 h1 > a {
@@ -35,6 +34,23 @@ header {
   z-index: 100;
 }
 
+header > * {
+  flex: 1;
+}
+
+header ul > * {
+  flex-grow: 0;
+}
+
+header ul li button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 16px;
+}
+
 nav {
   flex-basis: 0;
   flex-grow: 1;
@@ -47,17 +63,17 @@ ul {
   align-items: center;
   list-style: none;
   color: white;
-  flex-basis: 0;
-  flex-grow: 1;
+
   font-size: 14px;
   height: 100%;
+  width: 562px;
   text-align: center;
   font-weight: 600;
+  padding-inline: 8px;
 }
 
 ul > li {
-  flex: 1;
-  max-width: 100px;
+  flex-basis: min-content;
 }
 
 article {
@@ -74,6 +90,9 @@ article {
 .logo {
   flex-basis: 0;
   flex-grow: 1;
+  display: flex;
+  padding-left: 32px;
+  padding-right: 8px;
 }
 
 .header-icons {
@@ -81,16 +100,18 @@ article {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-basis: 0;
-  flex-grow: 1;
+
   font-size: 14px;
-  padding-right: 2rem;
+  padding-right: 32px;
 }
 
 .header-icons > a {
   width: 32px;
   height: 32px;
   margin-right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-icons > a > img {
@@ -119,6 +140,7 @@ article {
   color: white;
   text-decoration-color: white;
   text-decoration-skip-ink: none;
+  text-decoration: none;
 }
 
 .model-3-heading h3 {
@@ -127,6 +149,24 @@ article {
   text-align: center;
   font-size: 28px;
   line-height: 36px;
+}
+
+*[underline] {
+  position: relative;
+}
+
+*[underline]::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0px;
+  bottom: 0;
+  z-index: 1000;
+  border-bottom: 0.5px solid white;
+  border-spacing: 0;
+}
+
+*[underline][small-line]::after {
+  inset-inline: 10px;
 }
 
 .model-3-heading p {
@@ -265,4 +305,88 @@ article {
   background-color: #3e6ae1;
   border: 3px solid #3e6ae1;
   color: white;
+}
+
+/* copy section */
+
+.copy-section {
+  height: auto;
+  background-image: none;
+  background-color: #000000;
+  color: rgb(208, 209, 210);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-section sup {
+  font-size: 8px;
+}
+
+.copy-section section {
+  max-width: 595px;
+  text-align: center;
+  padding: 40px 0 24px 0;
+}
+
+.copy-section section p {
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 14px;
+  color: rgb(208, 209, 210);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.copy-section section p a {
+  color: rgb(254, 254, 254);
+  border-bottom-color: rgb(254, 254, 254);
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(208, 209, 210);
+  background-color: #000000;
+  color: white;
+  font-size: 12px;
+}
+
+footer section {
+  /* max-width: 595px; */
+  padding: 40px 0 24px 0;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: 100%;
+}
+
+footer ul {
+  font-size: 12px;
+  min-height: 70px;
+}
+
+footer ul li {
+  flex: 1;
+  flex-basis: max-content;
+}
+
+footer ul a {
+  color: rgb(208, 209, 210);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-nav {
+  padding-top: 0;
+  width: 100%;
 }
