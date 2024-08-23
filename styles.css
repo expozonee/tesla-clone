@@ -121,7 +121,7 @@ article {
   align-items: center;
 
   font-size: 14px;
-  padding-right: 32px;
+  padding-right: 27px;
 }
 
 .header-icons > a {
@@ -142,6 +142,17 @@ article {
   width: 24px;
   height: 24px;
 }
+
+header .burger-menu {
+  padding-right: 32px;
+  display: none;
+  color: white;
+}
+
+/* header section:has(i) {
+  display: none;
+  color: white;
+} */
 
 /* model 3 section */
 
@@ -426,4 +437,89 @@ footer ul a {
 .footer-nav {
   padding-top: 0;
   width: 100%;
+}
+
+/* media queries */
+
+@media (max-width: 870px) {
+  .logo {
+    padding-left: 8px;
+  }
+
+  .article-heading h1 {
+    font-size: 45px;
+  }
+
+  .article-heading h3 {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .article-heading h3[underline] {
+    text-decoration: underline;
+  }
+
+  .article-heading h3::after {
+    border-bottom: 1px solid transparent;
+  }
+
+  header ul,
+  header .header-icons {
+    display: none;
+  }
+
+  header .burger-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header .burger-menu button {
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    position: relative;
+    right: -16px;
+  }
+  header .burger-menu button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 20%;
+  }
+
+  header .burger-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .section-buttons {
+    width: 80%;
+    margin-inline: auto;
+    gap: 16px;
+  }
+
+  .cybertruck .headerc {
+    width: 80%;
+  }
+
+  .cybertruck .section-buttons {
+    justify-content: flex-end;
+  }
+
+  .copy-section section {
+    width: 80%;
+  }
+
+  .footer-nav ul {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .footer-nav ul li {
+    flex-grow: 0;
+  }
 }
