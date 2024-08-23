@@ -109,9 +109,8 @@ article {
 
 .header-nav li:has(button:hover) {
   text-decoration: underline;
-  background-color: #b4b4b4;
   transition: all 0.3s;
-
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0.5rem;
 }
 
@@ -134,6 +133,11 @@ article {
   align-items: center;
 }
 
+.header-icons > a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 20%;
+}
+
 .header-icons > a > img {
   width: 24px;
   height: 24px;
@@ -141,14 +145,14 @@ article {
 
 /* model 3 section */
 
-.model-3-heading {
+.article-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
 }
 
-.model-3-heading h1 {
+.article-heading h1 {
   margin-top: 12vh;
   font-size: 56px;
   color: white;
@@ -156,14 +160,14 @@ article {
   text-align: center;
 }
 
-.model-3-heading a {
+.article-heading a {
   color: white;
   text-decoration-color: white;
   text-decoration-skip-ink: none;
   text-decoration: none;
 }
 
-.model-3-heading h3 {
+.article-heading h3 {
   font-size: 20px;
   color: white;
   text-align: center;
@@ -189,7 +193,7 @@ article {
   inset-inline: 10px;
 }
 
-.model-3-heading p {
+.article-heading p {
   margin-top: 4px;
   font-size: 17px;
   line-height: 20px;
@@ -198,7 +202,7 @@ article {
   font-weight: 500;
 }
 
-.model-3-heading sup {
+.article-heading sup {
   font-size: 8px;
 }
 
@@ -210,6 +214,10 @@ article {
   align-items: center;
   padding-bottom: 32px;
   gap: 16px;
+}
+
+.section-buttons button {
+  cursor: pointer;
 }
 
 .section-buttons > * {
@@ -271,9 +279,18 @@ article {
   align-items: flex-end;
 }
 
+.cybertruck .section-buttons button {
+  color: rgb(162, 163, 165);
+}
+
+.cybertruck button:hover {
+  transition: all 0.3s;
+  opacity: 0.85;
+}
+
 .cybertruck .section-buttons > *:first-child {
   background-color: rgb(17, 17, 17);
-  color: rgb(216, 217, 218);
+  /* color: rgb(216, 217, 218); */
   border: none;
   border-radius: 0;
   padding-block: 4px;
