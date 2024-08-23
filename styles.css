@@ -99,6 +99,22 @@ article {
   padding-right: 8px;
 }
 
+.header-nav button {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding-block: 0.5rem;
+  transition: all 0.3s;
+}
+
+.header-nav li:has(button:hover) {
+  text-decoration: underline;
+  background-color: #b4b4b4;
+  transition: all 0.3s;
+
+  border-radius: 0.5rem;
+}
+
 .header-icons {
   height: 100%;
   display: flex;
