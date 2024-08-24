@@ -229,7 +229,9 @@ header .burger-menu {
 }
 
 .section-buttons button {
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .section-buttons > * {
@@ -293,6 +295,8 @@ header .burger-menu {
 
 .cybertruck .section-buttons button {
   color: rgb(162, 163, 165);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 .cybertruck button:hover {
@@ -302,7 +306,6 @@ header .burger-menu {
 
 .cybertruck .section-buttons > *:first-child {
   background-color: rgb(17, 17, 17);
-  /* color: rgb(216, 217, 218); */
   border: none;
   border-radius: 0;
   padding-block: 4px;
