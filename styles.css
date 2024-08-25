@@ -466,6 +466,10 @@ footer ul a {
 /* media queries */
 
 @media (max-width: 870px) {
+  article {
+    height: 90vh;
+  }
+
   .logo {
     padding-left: 8px;
   }
@@ -545,5 +549,61 @@ footer ul a {
 
   .footer-nav ul li {
     flex-grow: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  /* model 3 */
+
+  .model-3 {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Mobile-US.png);
+  }
+
+  /* model y */
+
+  .model-y {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Mobile-US-v2.png);
+  }
+
+  /* model x */
+
+  .model-x {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-X-Mobile-US.png);
+  }
+
+  /* model s */
+
+  .model-s {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Mobile-US.png);
+  }
+
+  /* cybertruck */
+
+  .cybertruck {
+    background-image: url(https://digitalassets.tesla.com/discovery-tesla-com/image/upload/f_auto,q_auto/Homepage-Cybertruck-Mobile.jpg);
+  }
+
+  /* solar panel */
+
+  .solar-panel {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-SolarPanels-01-Mobile);
+  }
+
+  /* solar roof */
+
+  .solar-roof {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-SolarRoof-Mobile-US.png);
+  }
+
+  /* powerwall */
+
+  .powerwall {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Powerwall-Mobile-US.png);
+  }
+
+  /* accessories */
+
+  .accessories {
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Mobile-US.png);
   }
 }
