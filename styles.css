@@ -463,7 +463,7 @@ footer ul a {
 @media (max-width: 870px) {
   article {
     height: 90vh;
-    height: 90lvh;
+    height: 80lvh;
   }
 
   .logo {
