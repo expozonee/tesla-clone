@@ -82,7 +82,7 @@ ul > li {
 
 article {
   height: 100vh;
-  height: 100dvh;
+  height: 100svh;
   background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-US.png);
   object-fit: cover;
   background-size: cover;
@@ -463,7 +463,7 @@ footer ul a {
 @media (max-width: 870px) {
   article {
     height: 90vh;
-    height: 90dvh;
+    height: 90svh;
   }
 
   .logo {
